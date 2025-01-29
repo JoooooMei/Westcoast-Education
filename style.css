@@ -161,7 +161,7 @@ ul {
   height: 100svh;
   width: 100%;
   background-color: rgb(255, 200, 0);
-  background: url('./img/hero-westcoast-education.webp');
+  background: url('img/hero-westcoast-education.webp');
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
