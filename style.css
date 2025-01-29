@@ -382,14 +382,13 @@ span {
   transform: translate(-50%, -50%);
 }
 
-/* .details-card {
+.details-card {
   flex: 0.7;
   background-color: white;
   padding: var(--page-margin);
   border: 3px solid black;
   margin: auto;
-  
-} */
+}
 
 .description {
   margin-bottom: var(--page-margin);
