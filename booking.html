@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>West Coast Education</title>
+    <script
+      src="https://kit.fontawesome.com/55174c58a9.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="src/booking.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="nav-wrapper">
+        <div class="logo-wrapper">
+          <a href="index.html">
+            <h1 class="logo-font">
+              West Coast<br />
+              Education<span>.</span>
+            </h1>
+          </a>
+        </div>
+
+        <nav>
+          <ul>
+            <li>Ett</li>
+            <li>Två</li>
+
+            <li>
+              <i class="fa-solid fa-right-to-bracket"></i>
+              <i class="fa-solid fa-user"></i>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="super-wrapper">
+      <div class="booking-wrapper">
+        <h2>Fantastiskt!</h2>
+
+        <h3>Skapa ett konto för att slutföra bokningen</h3>
+
+        <form class="booking-form" id="booking-form" action="">
+          <div class="input-flex">
+            <div>
+              <label>
+                Förnamn
+                <input
+                  id="input-first-name"
+                  name="firstName"
+                  type="text"
+                  placeholder="" />
+              </label>
+
+              <label>
+                Efternamn
+                <input
+                  id="input-last-name"
+                  name="lastName"
+                  type="text"
+                  placeholder="" />
+              </label>
+
+              <label>
+                Gata
+                <input
+                  id="input-street"
+                  name="streetAdress"
+                  type="text"
+                  placeholder="" />
+              </label>
+
+              <label>
+                Postnummer
+                <input
+                  id="input-zip"
+                  name="postalCode"
+                  type="text"
+                  placeholder="" />
+              </label>
+            </div>
+
+            <div>
+              <label>
+                Stad
+                <input id="input-city" name="city" type="text" placeholder="" />
+              </label>
+
+              <label>
+                Mobilnummer
+                <input
+                  id="input-mobile"
+                  name="mobilePhone"
+                  type="text"
+                  placeholder="" />
+              </label>
+
+              <label>
+                Epost
+                <input
+                  id="input-email"
+                  name="email"
+                  type="email"
+                  placeholder="" />
+              </label>
+            </div>
+          </div>
+
+          <button id="submit" type="submit">Boka</button>
+        </form>
+        <div id="booking-info">
+          <div class="thumbnail-wrapper">
+            <img src="" alt="" />
+          </div>
+          <div>
+            <h4>Din bokning</h4>
+            <p><b>Blockchain developer</b></p>
+            <p>Startdatum:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

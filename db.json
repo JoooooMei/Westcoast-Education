@@ -85,17 +85,132 @@
       "description": "Vill du förbättra ditt engelska ordförråd? Den här kursen hjälper dig att lära dig nya glosor genom interaktiva lektioner och praktiska övningar. Vi fokuserar på ord och uttryck som är användbara i både vardagliga och professionella sammanhang. Kursen innehåller också tips för att förbättra uttal och kommunikationsförmåga."
     }
   ],
-
   "customers": [
     {
-      "firstcourseName": "Johan",
-      "lastcourseName": "Meisel",
+      "firstName": "Nisse",
+      "lastName": "Olsson",
+      "streetAdress": "Supeergatan 10",
+      "city": "Varberg",
+      "postalCode": "44221",
+      "email": "nisse.olsson@epostuser.se",
+      "mobilePhone": "0834009081",
+      "bookings": [],
+      "id": "5252"
+    },
+    {
+      "firsteName": "Johan",
+      "lastName": "Meisel",
       "streetAdress": "Tegelformsgatan 10",
       "city": "Mölndal",
       "postalCode": "43136",
       "email": "johan.meisel@medieinstitutet.se",
       "mobilePhone": "0770431010",
-      "bookings": []
+      "bookings": [],
+      "id": "6b1d"
+    },
+    {
+      "id": "8888"
+    },
+    {
+      "id": "91f8",
+      "firstName": "Johan",
+      "lastName": "Test2",
+      "streetAdress": "asasas",
+      "postalCode": "asdsd",
+      "city": "asdsd",
+      "mobilePhone": "asddas",
+      "email": "c.johan.meisel@gmail.com"
+    },
+    {
+      "id": "26c0",
+      "firstName": "",
+      "lastName": "",
+      "streetAdress": "",
+      "postalCode": "",
+      "city": "",
+      "mobilePhone": "",
+      "email": ""
+    },
+    {
+      "id": "e59b",
+      "firstName": "",
+      "lastName": "",
+      "streetAdress": "",
+      "postalCode": "",
+      "city": "",
+      "mobilePhone": "",
+      "email": ""
+    },
+    {
+      "id": "fccc",
+      "firstName": "",
+      "lastName": "",
+      "streetAdress": "",
+      "postalCode": "",
+      "city": "",
+      "mobilePhone": "",
+      "email": ""
+    },
+    {
+      "id": "86ab",
+      "firstName": "",
+      "lastName": "",
+      "streetAdress": "",
+      "postalCode": "",
+      "city": "",
+      "mobilePhone": "",
+      "email": ""
+    },
+    {
+      "id": "d931",
+      "firstName": "",
+      "lastName": "",
+      "streetAdress": "",
+      "postalCode": "",
+      "city": "",
+      "mobilePhone": "",
+      "email": ""
+    },
+    {
+      "id": "9a75",
+      "firstName": "",
+      "lastName": "",
+      "streetAdress": "",
+      "postalCode": "",
+      "city": "",
+      "mobilePhone": "",
+      "email": ""
+    },
+    {
+      "id": "f411",
+      "firstName": "",
+      "lastName": "",
+      "streetAdress": "",
+      "postalCode": "",
+      "city": "",
+      "mobilePhone": "",
+      "email": ""
+    },
+    {
+      "id": "65fb",
+      "firstName": "",
+      "lastName": "",
+      "streetAdress": "",
+      "postalCode": "",
+      "city": "",
+      "mobilePhone": "",
+      "email": ""
+    },
+    {
+      "id": "486e",
+      "firstName": "",
+      "lastName": "",
+      "streetAdress": "",
+      "postalCode": "",
+      "city": "",
+      "mobilePhone": "",
+      "email": ""
     }
-  ]
+  ],
+  "bookings": []
 }
