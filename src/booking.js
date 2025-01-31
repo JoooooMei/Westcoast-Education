@@ -1,8 +1,17 @@
+import { findThisCourse } from './utilities/api.js';
+
 const bookingForm = document.querySelector('#booking-form');
 const submitButton = document.querySelector('#submit');
-const url = 'http://localhost:3000/customers';
 
-const initApp = () => {};
+const initApp = () => {
+  ShowCourse();
+};
+
+const ShowCourse = async () => {
+  let url = 'http://localhost:3000/utbildningar/';
+  const course = await findThisCourse(url);
+  updateUI(course);
+};
 
 const handleFormInput = async (e) => {
   if (!e.target.closest('form').checkValidity()) {
@@ -15,7 +24,7 @@ const handleFormInput = async (e) => {
   const body = Object.fromEntries(newBookingData);
 
   try {
-    const response = await fetch(url, {
+    const response = await fetch('http://localhost:3000/customers', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -31,12 +40,22 @@ const handleFormInput = async (e) => {
   } catch (error) {
     console.error('Network error:', error);
   }
-
-  updateUI();
 };
 
-const updateUI = () => {
-  console.log('hello im here!');
+const updateUI = (course) => {
+  console.log(course);
+
+  const div = document.querySelector('#booking-info');
+  div.innerHTML = `
+  <div class="thumbnail-wrapper">
+    <img src="${course.imageUrl}"  />
+  </div>
+  <div>
+    <h4>Din bokning</h4>
+    <p><b>${course.courseName}</b></p>
+    <p>Startdatum: ${course.startDate}</p>
+  </div>
+  `;
 };
 
 bookingForm.addEventListener('submit', handleFormInput);

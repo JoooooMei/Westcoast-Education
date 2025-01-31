@@ -109,107 +109,14 @@
       "id": "6b1d"
     },
     {
-      "id": "8888"
-    },
-    {
-      "id": "91f8",
-      "firstName": "Johan",
-      "lastName": "Test2",
-      "streetAdress": "asasas",
-      "postalCode": "asdsd",
-      "city": "asdsd",
-      "mobilePhone": "asddas",
-      "email": "c.johan.meisel@gmail.com"
-    },
-    {
-      "id": "26c0",
-      "firstName": "",
-      "lastName": "",
-      "streetAdress": "",
-      "postalCode": "",
-      "city": "",
-      "mobilePhone": "",
-      "email": ""
-    },
-    {
-      "id": "e59b",
-      "firstName": "",
-      "lastName": "",
-      "streetAdress": "",
-      "postalCode": "",
-      "city": "",
-      "mobilePhone": "",
-      "email": ""
-    },
-    {
-      "id": "fccc",
-      "firstName": "",
-      "lastName": "",
-      "streetAdress": "",
-      "postalCode": "",
-      "city": "",
-      "mobilePhone": "",
-      "email": ""
-    },
-    {
-      "id": "86ab",
-      "firstName": "",
-      "lastName": "",
-      "streetAdress": "",
-      "postalCode": "",
-      "city": "",
-      "mobilePhone": "",
-      "email": ""
-    },
-    {
-      "id": "d931",
-      "firstName": "",
-      "lastName": "",
-      "streetAdress": "",
-      "postalCode": "",
-      "city": "",
-      "mobilePhone": "",
-      "email": ""
-    },
-    {
-      "id": "9a75",
-      "firstName": "",
-      "lastName": "",
-      "streetAdress": "",
-      "postalCode": "",
-      "city": "",
-      "mobilePhone": "",
-      "email": ""
-    },
-    {
-      "id": "f411",
-      "firstName": "",
-      "lastName": "",
-      "streetAdress": "",
-      "postalCode": "",
-      "city": "",
-      "mobilePhone": "",
-      "email": ""
-    },
-    {
-      "id": "65fb",
-      "firstName": "",
-      "lastName": "",
-      "streetAdress": "",
-      "postalCode": "",
-      "city": "",
-      "mobilePhone": "",
-      "email": ""
-    },
-    {
-      "id": "486e",
-      "firstName": "",
-      "lastName": "",
-      "streetAdress": "",
-      "postalCode": "",
-      "city": "",
-      "mobilePhone": "",
-      "email": ""
+      "id": "24c1",
+      "firstName": "Glosmannen",
+      "lastName": "Andersson",
+      "streetAdress": "Gatan 10",
+      "postalCode": "523523",
+      "city": "Himlafinsstad",
+      "mobilePhone": "070110044",
+      "email": "elf@gmail.com"
     }
   ],
   "bookings": []
