@@ -87,37 +87,33 @@
   ],
   "customers": [
     {
-      "firstName": "Nisse",
+      "id": "b60e",
+      "customerId": "194d158db45-1e49dec682a8cb085587bb878867cc8e",
+      "firstName": "Ingrid",
       "lastName": "Olsson",
-      "streetAdress": "Supeergatan 10",
-      "city": "Varberg",
-      "postalCode": "44221",
-      "email": "nisse.olsson@epostuser.se",
-      "mobilePhone": "0834009081",
-      "bookings": [],
-      "id": "5252"
-    },
-    {
-      "firsteName": "Johan",
-      "lastName": "Meisel",
-      "streetAdress": "Tegelformsgatan 10",
-      "city": "Mölndal",
-      "postalCode": "43136",
-      "email": "johan.meisel@medieinstitutet.se",
-      "mobilePhone": "0770431010",
-      "bookings": [],
-      "id": "6b1d"
-    },
-    {
-      "id": "24c1",
-      "firstName": "Glosmannen",
-      "lastName": "Andersson",
-      "streetAdress": "Gatan 10",
-      "postalCode": "523523",
-      "city": "Himlafinsstad",
-      "mobilePhone": "070110044",
-      "email": "elf@gmail.com"
+      "streetAdress": "Hemligagatan 12",
+      "postalCode": "551 54",
+      "city": "Borås",
+      "mobilePhone": "070 45 45 45",
+      "email": "ingrid@mail.se"
     }
   ],
-  "bookings": []
+  "customerOrders": [
+    {
+      "id": "8556",
+      "orderDate": "2025-02-04",
+      "customer": {
+        "customerId": "194d158db45-1e49dec682a8cb085587bb878867cc8e",
+        "firstName": "Ingrid",
+        "lastName": "Olsson",
+        "streetAdress": "Hemligagatan 12",
+        "postalCode": "551 54",
+        "city": "Borås",
+        "mobilePhone": "070 45 45 45",
+        "email": "ingrid@mail.se"
+      },
+      "course": "Fiska som proffsen",
+      "distanceCourse": true
+    }
+  ]
 }

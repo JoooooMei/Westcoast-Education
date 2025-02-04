@@ -38,6 +38,18 @@ export const showCourses = (courses) => {
   listAllCourses.appendChild(ul);
 };
 
+export const showAllCoursesBackoffice = (courses) => {
+  const list = document.querySelector('#course-list');
+
+  courses.forEach = (course) => {
+    li.innerHTML = `
+      ${course.courseName}
+    `;
+
+    list.appendChild(li);
+  };
+};
+
 export const showCourseDetails = (course) => {
   const div = document.querySelector('#course-details');
   div.innerHTML = `
@@ -66,21 +78,15 @@ export const showCourseDetails = (course) => {
   </div>
   <div class="description">
     <p>
-      Denna kurs ger dig en omfattande introduktion till
-      blockchain-teknologi och dess användningsområden. Du kommer att lära
-      dig hur distribuerade system fungerar, grunderna i kryptografi samt
-      hur smarta kontrakt kan automatisera processer på ett säkert sätt.
-      Kursen inkluderar praktiska övningar där du får skapa och implementera
-      dina egna blockchain-applikationer.
+      ${course.description}
     </p>
   </div>
   <div class="button-wrapper">
     <a class="link-button" href="./booking.html?id=${
       course.id
-    }" id="boka-klassrum">Boka i klassrum</a>
-    <button id="boka-distans">Boka distans</button>
+    }" id="boka-klassrum">Boka</a>
   </div>
   `;
 
-  document.querySelector('.wrap').appendChild(div);
+  document.querySelector('.center-wrapper').appendChild(div);
 };

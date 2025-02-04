@@ -74,6 +74,20 @@ input {
   all: unset;
 }
 
+select {
+  margin: 20px 0;
+  font: inherit;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 10px;
+  max-width: 250px;
+  border: 3px solid var(--secondary-color);
+}
+
+select:valid {
+  border-color: var(--border-color);
+}
+
 header {
   position: fixed;
   z-index: 100;
@@ -153,6 +167,24 @@ ul {
   list-style: none;
 }
 
+.center-wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-card {
+  position: relative;
+  z-index: 3;
+  max-width: var(--content-width);
+  margin: var(--page-margin);
+  padding: calc(var(--page-margin) * 2);
+  border: 3px solid var(--border-color);
+  background: white;
+  border-radius: 20px;
+}
+
 .super-wrapper {
   position: relative;
   z-index: 3;
@@ -163,7 +195,7 @@ ul {
 }
 
 .hero-section {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -244,6 +276,7 @@ button:active {
   font-size: 1.2rem;
   border-radius: 10px;
   cursor: pointer;
+  width: fit-content;
 }
 
 .link-button:hover {
@@ -433,6 +466,9 @@ span {
 /* Booking page css */
 
 .booking-wrapper {
+  flex: 1;
+  max-width: var(--content-width);
+  margin: var(--page-margin);
   background-color: white;
   border: 3px solid black;
   padding: calc(var(--page-margin) * 2);
@@ -463,6 +499,7 @@ span {
   border: 3px solid black;
   padding: 10px;
   font-weight: 600;
+  height: auto;
 }
 
 label {

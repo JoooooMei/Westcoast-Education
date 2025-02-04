@@ -36,13 +36,13 @@
       </div>
     </header>
 
-    <div class="super-wrapper">
+    <div class="center-wrapper">
       <div class="booking-wrapper">
-        <h2>Fantastiskt!</h2>
+        <h2>Nästan klart!</h2>
 
         <h3>Skapa ett konto för att slutföra bokningen</h3>
 
-        <form class="booking-form" id="booking-form" action="">
+        <form class="booking-form" id="booking-form">
           <div class="input-flex">
             <div>
               <label>
@@ -105,6 +105,12 @@
                   type="email"
                   placeholder="" />
               </label>
+
+              <select id="input-course-format" name="courseFormat" required>
+                <option value="" disabled selected>Välj kursformat</option>
+                <option value="Distanskurs">Distanskurs</option>
+                <option value="Klassrum">Klassrum</option>
+              </select>
             </div>
           </div>
 
