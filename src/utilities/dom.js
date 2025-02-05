@@ -41,13 +41,23 @@ export const showCourses = (courses) => {
 export const showAllCoursesBackoffice = (courses) => {
   const list = document.querySelector('#course-list');
 
-  courses.forEach = (course) => {
+  courses.forEach((course) => {
+    const li = document.createElement('li');
     li.innerHTML = `
-      ${course.courseName}
+      <div>
+       ${course.courseName}
+      </div>
+      <div>
+        Kursdeltagare
+        <div class="flex">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     `;
-
     list.appendChild(li);
-  };
+  });
 };
 
 export const showCourseDetails = (course) => {

@@ -70,10 +70,6 @@ p {
   margin-bottom: 10px;
 }
 
-input {
-  all: unset;
-}
-
 select {
   margin: 20px 0;
   font: inherit;
@@ -127,15 +123,6 @@ header {
 
 .nav-wrapper nav ul li:last-child {
   margin-left: auto;
-}
-
-.nav-wrapper nav ul .fa-user,
-.fa-right-to-bracket {
-  font-size: 21px;
-  background-color: rgba(0, 0, 0, 0.519);
-  color: white;
-  padding: 9px 12px 12px 12px;
-  border-radius: 50%;
 }
 
 .logo-font {
@@ -294,11 +281,76 @@ button:active {
 }
 
 input {
-  width: calc(100% - 20px);
+  width: 100%;
   height: 100%;
   font-size: 1.2rem;
   border-radius: 10px;
   padding-inline: 10px;
+  border: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 2px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 3px solid black;
+  background-color: #ffffffc2;
+  border-radius: 5px;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 9px;
+  height: 15px;
+  border: solid rgb(0, 0, 0);
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .sort-container button {
@@ -522,6 +574,114 @@ input:hover {
   margin-bottom: 5px;
 }
 
+/* Backoffice styles */
+
+.admin {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 160px;
+}
+
+.admin-wrapper {
+  display: flex;
+  flex: 1;
+  max-width: 1440px;
+  margin: var(--page-margin);
+  gap: var(--page-margin);
+  background-color: rgb(245 245 245);
+  padding: var(--page-margin);
+  border: 3px solid #b3b3b3;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.admin-wrapper h4 {
+  padding-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.admin-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-wrapper input {
+  background: #ffffffc2;
+  padding-bottom: 10px;
+  white-space: normal;
+}
+
+#input-description {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: #ffffffc2;
+  padding: 10px;
+  font-weight: 500;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.admin-wrapper .course-list-admin {
+  padding: 0;
+  margin: 0;
+}
+
+.admin-wrapper li {
+  background-color: #ffffffc2;
+  margin-bottom: 10px;
+}
+
+.admin-wrapper li:last-child {
+  margin-bottom: 0;
+}
+
+.admin-wrapper li div:first-child {
+  padding: 20px;
+  background-color: #d8d8d8;
+  font-weight: 600;
+  letter-spacing: 0.015rem;
+}
+
+.admin-wrapper li div {
+  padding: 20px;
+  background-color: #ebebeb;
+}
+
+.admin-wrapper > * {
+  flex: 1;
+}
+
+.admin-wrapper div {
+  flex: 1;
+  padding: var(--page-margin);
+}
+
+.admin-wrapper button {
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  gap: var(--page-margin);
+  border: none !important;
+  padding: 0 !important;
+}
+
+.flex > * {
+  flex: 1;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.price {
+  min-width: 30%;
+}
 @media (max-width: 768px) {
   :root {
     --page-margin: 20px;
@@ -567,5 +727,13 @@ input:hover {
 
   .booking-wrapper h2 {
     font-size: 3rem;
+  }
+
+  .admin-wrapper {
+    flex-direction: column;
+  }
+
+  .wrap {
+    flex-direction: column;
   }
 }

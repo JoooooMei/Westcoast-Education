@@ -10,7 +10,8 @@
       "distanceCourse": true,
       "price": 1950,
       "popular": true,
-      "description": "Denna kurs ger dig en omfattande introduktion till blockchain-teknologi och dess användningsområden. Du kommer att lära dig hur distribuerade system fungerar, grunderna i kryptografi samt hur smarta kontrakt kan automatisera processer på ett säkert sätt. Kursen inkluderar praktiska övningar där du får skapa och implementera dina egna blockchain-applikationer."
+      "description": "Denna kurs ger dig en omfattande introduktion till blockchain-teknologi och dess användningsområden. Du kommer att lära dig hur distribuerade system fungerar, grunderna i kryptografi samt hur smarta kontrakt kan automatisera processer på ett säkert sätt. Kursen inkluderar praktiska övningar där du får skapa och implementera dina egna blockchain-applikationer.",
+      "bookings": []
     },
     {
       "id": "2",
@@ -22,7 +23,8 @@
       "distanceCourse": true,
       "price": 3450,
       "popular": false,
-      "description": "Vill du lära dig att baka fantastiskt surdegsbröd från grunden? Den här kursen tar dig genom hela processen – från att skapa och mata en surdegsgrund till att baka olika typer av bröd. Vi går igenom viktiga tekniker som knådning, vikning och jäsning. Kursen passar både nybörjare och dig som vill fördjupa dina kunskaper."
+      "description": "Vill du lära dig att baka fantastiskt surdegsbröd från grunden? Den här kursen tar dig genom hela processen – från att skapa och mata en surdegsgrund till att baka olika typer av bröd. Vi går igenom viktiga tekniker som knådning, vikning och jäsning. Kursen passar både nybörjare och dig som vill fördjupa dina kunskaper.",
+      "bookings": []
     },
     {
       "id": "3",
@@ -34,7 +36,8 @@
       "distanceCourse": false,
       "price": 19950,
       "popular": true,
-      "description": "Kryptovalutamarknaden är snabb och oförutsägbar, särskilt när det gäller memecoins. I denna avancerade kurs får du verktygen att analysera trender och bedöma potentiella investeringsmöjligheter. Kursen täcker ämnen som sentimentanalys, marknadssignaler och riskhantering. Praktiska övningar och analys av verkliga case ingår."
+      "description": "Kryptovalutamarknaden är snabb och oförutsägbar, särskilt när det gäller memecoins. I denna avancerade kurs får du verktygen att analysera trender och bedöma potentiella investeringsmöjligheter. Kursen täcker ämnen som sentimentanalys, marknadssignaler och riskhantering. Praktiska övningar och analys av verkliga case ingår.",
+      "bookings": []
     },
     {
       "id": "4",
@@ -46,7 +49,8 @@
       "distanceCourse": true,
       "popular": true,
       "price": 2350,
-      "description": "Den här kursen är perfekt för dig som vill ta ditt sportfiske till nästa nivå. Lär dig proffsens tekniker för olika typer av fiske, inklusive kustfiske, spinnfiske och flugfiske. Vi går igenom hur du väljer rätt utrustning, läser av vattnet och hanterar fiskarna på ett hållbart sätt. Teori varvas med praktiska pass."
+      "description": "Den här kursen är perfekt för dig som vill ta ditt sportfiske till nästa nivå. Lär dig proffsens tekniker för olika typer av fiske, inklusive kustfiske, spinnfiske och flugfiske. Vi går igenom hur du väljer rätt utrustning, läser av vattnet och hanterar fiskarna på ett hållbart sätt. Teori varvas med praktiska pass.",
+      "bookings": []
     },
     {
       "id": "5",

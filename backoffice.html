@@ -28,25 +28,109 @@
             <li>Två</li>
 
             <li>
-              <i class="fa-solid fa-right-to-bracket"></i>
-              <i class="fa-solid fa-user"></i>
+              <a href="/backoffice.html">Admin
+                <i class="fa-sharp fa-regular fa-gear"></i></a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
+  
+    <section class="admin">
+      <div class="admin-wrapper">
+        <div>
+          <h4>Lägg till ny kurs</h4>
+          <form action="" class="booking-form">
 
-    <section>
-      <div>
-        <h4>Lägg till ny kurs</h4>
-      </div>
 
-      <div>
-        <h4>Alla kurser</h4>
-        <ul id="course-list">
-         
-        </ul>
+            <!--
+
+      "courseName": "Blockchain Developer",
+      "duration": 4,
+      "imageUrl": "img/courses/blockchain-dev.webp",
+      "startDate": "2025-03-01",
+      "classRoom": false,
+      "distanceCourse": true,
+      "price": 1950,
+      "popular": true,
+      "description":
+             -->
+            <label>
+              Kursens namn
+              <input
+                id="course-name"
+                name="courseName"
+                type="text"
+                placeholder="" />
+            </label>
+
+            <label>
+              Beskrivning
+              <textarea
+                id="input-description"
+                name="description"
+
+                rows="5"
+                placeholder=""></textarea>
+            </label>
+
+            <div class="flex wrap">
+              <label class="price">
+                Ange pris
+                <input
+                  id="input-price"
+                  name="price"
+                  type="text"
+                  placeholder="" />
+              </label>
+
+              <div class="flex">
+                <div >
+                  <label class="container">Klassrum
+                    <input name="classRoom" type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div>
+                  <label class="container">Distans
+                    <input name="distanceCourse" type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+              
+
+            </div>
+            
+
+            <div class="flex wrap">
+              <label>Startdatum
+                <input type="date" name="startDate" value="2025-01-01"  />
+              </label>
+  
+              <label>
+                Kursens längd (dagar)
+                <input
+                  id="input-duration"
+                  name="duration"
+                  type="text"
+                  placeholder="" />
+              </label>
+            </div>
+            
+
+          <button type="submit"><i class="fa-sharp fa-solid fa-plus"></i> Lägg till kurs </button>
+          </form>
+        </div>
+  
+        <div>
+          <h4>Alla kurser</h4>
+          <ul id="course-list">
+           
+          </ul>
+        </div>
       </div>
+      
       
     </section>
 </html>
