@@ -2,6 +2,7 @@
   "utbildningar": [
     {
       "id": "1",
+      "courseId": "1",
       "courseName": "Blockchain Developer",
       "duration": 4,
       "imageUrl": "img/courses/blockchain-dev.webp",
@@ -10,11 +11,11 @@
       "distanceCourse": true,
       "price": 1950,
       "popular": true,
-      "description": "Denna kurs ger dig en omfattande introduktion till blockchain-teknologi och dess användningsområden. Du kommer att lära dig hur distribuerade system fungerar, grunderna i kryptografi samt hur smarta kontrakt kan automatisera processer på ett säkert sätt. Kursen inkluderar praktiska övningar där du får skapa och implementera dina egna blockchain-applikationer.",
-      "bookings": []
+      "description": "Denna kurs ger dig en omfattande introduktion till blockchain-teknologi och dess användningsområden. Du kommer att lära dig hur distribuerade system fungerar, grunderna i kryptografi samt hur smarta kontrakt kan automatisera processer på ett säkert sätt. Kursen inkluderar praktiska övningar där du får skapa och implementera dina egna blockchain-applikationer."
     },
     {
       "id": "2",
+      "courseId": "2",
       "courseName": "Surdeg från grunden",
       "duration": 10,
       "imageUrl": "img/courses/surdeg_course.webp",
@@ -23,11 +24,11 @@
       "distanceCourse": true,
       "price": 3450,
       "popular": false,
-      "description": "Vill du lära dig att baka fantastiskt surdegsbröd från grunden? Den här kursen tar dig genom hela processen – från att skapa och mata en surdegsgrund till att baka olika typer av bröd. Vi går igenom viktiga tekniker som knådning, vikning och jäsning. Kursen passar både nybörjare och dig som vill fördjupa dina kunskaper.",
-      "bookings": []
+      "description": "Vill du lära dig att baka fantastiskt surdegsbröd från grunden? Den här kursen tar dig genom hela processen – från att skapa och mata en surdegsgrund till att baka olika typer av bröd. Vi går igenom viktiga tekniker som knådning, vikning och jäsning. Kursen passar både nybörjare och dig som vill fördjupa dina kunskaper."
     },
     {
       "id": "3",
+      "courseId": "3",
       "courseName": "Memecoin analytics",
       "duration": 30,
       "imageUrl": "img/courses/memecoins.webp",
@@ -36,11 +37,11 @@
       "distanceCourse": false,
       "price": 19950,
       "popular": true,
-      "description": "Kryptovalutamarknaden är snabb och oförutsägbar, särskilt när det gäller memecoins. I denna avancerade kurs får du verktygen att analysera trender och bedöma potentiella investeringsmöjligheter. Kursen täcker ämnen som sentimentanalys, marknadssignaler och riskhantering. Praktiska övningar och analys av verkliga case ingår.",
-      "bookings": []
+      "description": "Kryptovalutamarknaden är snabb och oförutsägbar, särskilt när det gäller memecoins. I denna avancerade kurs får du verktygen att analysera trender och bedöma potentiella investeringsmöjligheter. Kursen täcker ämnen som sentimentanalys, marknadssignaler och riskhantering. Praktiska övningar och analys av verkliga case ingår."
     },
     {
       "id": "4",
+      "courseId": "4",
       "courseName": "Fiska som proffsen",
       "duration": 5,
       "imageUrl": "img/courses/fishing.webp",
@@ -49,11 +50,11 @@
       "distanceCourse": true,
       "popular": true,
       "price": 2350,
-      "description": "Den här kursen är perfekt för dig som vill ta ditt sportfiske till nästa nivå. Lär dig proffsens tekniker för olika typer av fiske, inklusive kustfiske, spinnfiske och flugfiske. Vi går igenom hur du väljer rätt utrustning, läser av vattnet och hanterar fiskarna på ett hållbart sätt. Teori varvas med praktiska pass.",
-      "bookings": []
+      "description": "Den här kursen är perfekt för dig som vill ta ditt sportfiske till nästa nivå. Lär dig proffsens tekniker för olika typer av fiske, inklusive kustfiske, spinnfiske och flugfiske. Vi går igenom hur du väljer rätt utrustning, läser av vattnet och hanterar fiskarna på ett hållbart sätt. Teori varvas med praktiska pass."
     },
     {
       "id": "5",
+      "courseId": "5",
       "courseName": "Matematik för nybörjare",
       "duration": 60,
       "imageUrl": "img/courses/matematik.webp",
@@ -66,6 +67,7 @@
     },
     {
       "id": "6",
+      "courseId": "6",
       "courseName": "Arkeologi Grundkurs",
       "duration": 10,
       "imageUrl": "img/courses/arkeologi.webp",
@@ -78,6 +80,7 @@
     },
     {
       "id": "7",
+      "courseId": "7",
       "courseName": "Engelska glosor",
       "duration": 12,
       "imageUrl": "img/courses/engelska-glosor.webp",
@@ -91,33 +94,118 @@
   ],
   "customers": [
     {
-      "id": "b60e",
-      "customerId": "194d158db45-1e49dec682a8cb085587bb878867cc8e",
-      "firstName": "Ingrid",
-      "lastName": "Olsson",
-      "streetAdress": "Hemligagatan 12",
-      "postalCode": "551 54",
-      "city": "Borås",
-      "mobilePhone": "070 45 45 45",
+      "id": "81e9",
+      "customerId": "194dba50510-a91c5183f4ba797ab1284ca3ca876557",
+      "firstName": "Anne",
+      "lastName": "Andersson",
+      "streetAdress": "Gatan 10",
+      "postalCode": "431 36",
+      "city": "Himlafinsstad",
+      "mobilePhone": "070 411 11 77",
+      "email": "anne@mail.se"
+    },
+    {
+      "id": "9023",
+      "customerId": "194dba554ff-dcd6c6e58a094fb551f90bad40b6b67f",
+      "firstName": "Johan",
+      "lastName": "Meisel",
+      "streetAdress": "Tegelformsgatan 10",
+      "postalCode": "431 36",
+      "city": "Mölndal",
+      "mobilePhone": "0736106349",
+      "email": "c.johan.meisel@gmail.com"
+    },
+    {
+      "id": "bd74",
+      "customerId": "194dbc0f477-fc673ccb3f98ce06f1fcc34c719cbc27",
+      "firstName": "Osten PÅ mackan",
+      "lastName": "Andersson",
+      "streetAdress": "Min gata 10",
+      "postalCode": "441 42",
+      "city": "Gävle",
+      "mobilePhone": "070 451 47 89",
       "email": "ingrid@mail.se"
+    },
+    {
+      "id": "b4d7",
+      "customerId": "194e085d333-954575ea0facaac1e2760ae261991067",
+      "firstName": "Fredrik",
+      "lastName": "Bengtsson",
+      "streetAdress": "Andra gaten 202",
+      "postalCode": "532 25",
+      "city": "Stockholm",
+      "mobilePhone": "070 777 999",
+      "email": "freddy@mail.se"
     }
   ],
   "customerOrders": [
     {
-      "id": "8556",
-      "orderDate": "2025-02-04",
+      "id": "479c",
+      "orderDate": "2025-02-06",
       "customer": {
-        "customerId": "194d158db45-1e49dec682a8cb085587bb878867cc8e",
-        "firstName": "Ingrid",
-        "lastName": "Olsson",
-        "streetAdress": "Hemligagatan 12",
-        "postalCode": "551 54",
-        "city": "Borås",
-        "mobilePhone": "070 45 45 45",
+        "customerId": "194dba50510-a91c5183f4ba797ab1284ca3ca876557",
+        "firstName": "Anne",
+        "lastName": "Andersson",
+        "streetAdress": "Gatan 10",
+        "postalCode": "431 36",
+        "city": "Himlafinsstad",
+        "mobilePhone": "070 411 11 77",
+        "email": "anne@mail.se"
+      },
+      "courseName": "Blockchain Developer",
+      "courseId": "1",
+      "distanceCourse": true
+    },
+    {
+      "id": "dfac",
+      "orderDate": "2025-02-06",
+      "customer": {
+        "customerId": "194dba554ff-dcd6c6e58a094fb551f90bad40b6b67f",
+        "firstName": "Johan",
+        "lastName": "Meisel",
+        "streetAdress": "Tegelformsgatan 10",
+        "postalCode": "431 36",
+        "city": "Mölndal",
+        "mobilePhone": "0736106349",
+        "email": "c.johan.meisel@gmail.com"
+      },
+      "courseName": "Surdeg från grunden",
+      "courseId": "2",
+      "classRoom": true
+    },
+    {
+      "id": "2ca2",
+      "orderDate": "2025-02-06",
+      "customer": {
+        "customerId": "194dbc0f477-fc673ccb3f98ce06f1fcc34c719cbc27",
+        "firstName": "Niklas",
+        "lastName": "Pettersson",
+        "streetAdress": "Min gata 10",
+        "postalCode": "441 42",
+        "city": "Gävle",
+        "mobilePhone": "070 451 47 89",
         "email": "ingrid@mail.se"
       },
-      "course": "Fiska som proffsen",
-      "distanceCourse": true
+      "courseName": "Surdeg från grunden",
+      "courseId": "2",
+      "classRoom": true
+    },
+    {
+      "id": "a622",
+      "orderDate": "2025-02-07",
+      "customer": {
+        "customerId": "194e085d333-954575ea0facaac1e2760ae261991067",
+        "firstName": "Fredrik",
+        "lastName": "Bengtsson",
+        "streetAdress": "Andra gaten 202",
+        "postalCode": "532 25",
+        "city": "Stockholm",
+        "mobilePhone": "070 777 999",
+        "email": "freddy@mail.se"
+      },
+      "courseName": "Fiska som proffsen",
+      "courseId": "4",
+      "classRoom": true
     }
   ]
 }

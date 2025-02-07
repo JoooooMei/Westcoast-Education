@@ -9,8 +9,6 @@ const initApp = () => {
 };
 
 const generateBookingId = () => {
-  // Jag kan inte för allt i världen få crypto.UUID() att fungera ...
-  // Därför har jag denna komplicerade funktionen istället.
   const array = new Uint32Array(4);
   crypto.getRandomValues(array);
 
@@ -27,6 +25,63 @@ const ShowCourse = async () => {
   const course = await findThisCourse(url);
   showBookingDetails(course);
 };
+
+// const handleFormInput = async (e) => {
+//   let url = 'http://localhost:3000/utbildningar/';
+//   const course = await findThisCourse(url);
+//   console.log(course);
+
+//   e.preventDefault();
+
+//   if (bookingForm === null) return;
+
+//   if (!e.target.closest('form').checkValidity()) {
+//     // Låt webbläsaren visa valideringsmeddelanden
+//     return;
+//   }
+//   const id = generateBookingId();
+//   const newBookingData = new FormData(bookingForm);
+//   const formData = Object.fromEntries(newBookingData);
+
+//   const customer = {
+//     customerId: id,
+//     firstName: formData.firstName.toString(),
+//     lastName: formData.lastName.toString(),
+//     streetAdress: formData.streetAdress.toString(),
+//     postalCode: formData.postalCode.toString(),
+//     city: formData.city.toString(),
+//     mobilePhone: formData.mobilePhone.toString(),
+//     email: formData.email.toString(),
+//   };
+
+//   try {
+//     // Först hämtar vi den nuvarande datan för utbildningen
+//     const getCurrentData = await fetch(`http://localhost:3000/utbildningar/1`);
+//     const currentData = await getCurrentData.json();
+
+//     // Lägger till den nya bokningen i den existerande bookings-arrayen
+//     const updatedBookings = [...currentData.bookings, customer];
+
+//     // Skickar PATCH-request med den uppdaterade bookings-arrayen
+//     const response = await fetch(`http://localhost:3000/utbildningar/1`, {
+//       method: 'PATCH',
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//       body: JSON.stringify({
+//         bookings: updatedBookings,
+//       }),
+//     });
+
+//     if (response.ok) {
+//       console.log('Customer added successfully!');
+//     } else {
+//       console.error('Error adding customer');
+//     }
+//   } catch (error) {
+//     console.error('Network error:', error);
+//   }
+// };
 
 const handleFormInput = async (e) => {
   let url = 'http://localhost:3000/utbildningar/';
@@ -58,7 +113,8 @@ const handleFormInput = async (e) => {
   const customerOrder = {
     orderDate: new Date().toLocaleDateString('sv-SE'),
     customer: customer,
-    course: course.courseName,
+    courseName: course.courseName,
+    courseId: course.courseId,
   };
 
   if (formData.courseFormat === 'Klassrum') {

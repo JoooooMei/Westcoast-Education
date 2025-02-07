@@ -639,9 +639,9 @@ input:hover {
   margin-bottom: 0;
 }
 
-.admin-wrapper li div:first-child {
+.admin-wrapper li .course-name-heading {
   padding: 20px;
-  background-color: #d8d8d8;
+  background-color: #dddddd;
   font-weight: 600;
   letter-spacing: 0.015rem;
 }
@@ -681,6 +681,18 @@ input:hover {
 
 .price {
   min-width: 30%;
+}
+
+.admin-wrapper .booking-details {
+  padding: 0;
+}
+
+.admin-wrapper .booking-details div {
+  padding: 10px 0 0 0;
+}
+
+.admin-wrapper .booking-details p {
+  margin-bottom: 5px;
 }
 @media (max-width: 768px) {
   :root {

@@ -8,7 +8,7 @@
       src="https://kit.fontawesome.com/55174c58a9.js"
       crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="src/backoffice.js"></script>
+    <script type="module" src="src/backoffice.js" defer></script>
   </head>
   <body>
     <header>
@@ -41,20 +41,6 @@
         <div>
           <h4>Lägg till ny kurs</h4>
           <form action="" class="booking-form">
-
-
-            <!--
-
-      "courseName": "Blockchain Developer",
-      "duration": 4,
-      "imageUrl": "img/courses/blockchain-dev.webp",
-      "startDate": "2025-03-01",
-      "classRoom": false,
-      "distanceCourse": true,
-      "price": 1950,
-      "popular": true,
-      "description":
-             -->
             <label>
               Kursens namn
               <input
@@ -87,13 +73,13 @@
               <div class="flex">
                 <div >
                   <label class="container">Klassrum
-                    <input name="classRoom" type="checkbox" checked="checked">
+                    <input name="classRoom" type="checkbox" >
                     <span class="checkmark"></span>
                   </label>
                 </div>
                 <div>
                   <label class="container">Distans
-                    <input name="distanceCourse" type="checkbox" checked="checked">
+                    <input name="distanceCourse" type="checkbox" >
                     <span class="checkmark"></span>
                   </label>
                 </div>
