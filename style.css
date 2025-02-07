@@ -164,6 +164,7 @@ ul {
 .content-card {
   position: relative;
   z-index: 3;
+  width: 100%;
   max-width: var(--content-width);
   margin: var(--page-margin);
   padding: calc(var(--page-margin) * 2);
@@ -694,6 +695,19 @@ input:hover {
 .admin-wrapper .booking-details p {
   margin-bottom: 5px;
 }
+
+.admin-wrapper div .bookings-container {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--page-margin);
+  padding: 0 0 3px 1px;
+  border-bottom: 3px solid #dddddd;
+}
+
+.admin-wrapper div .bookings-container div {
+  flex: 0 1 auto;
+}
+
 @media (max-width: 768px) {
   :root {
     --page-margin: 20px;

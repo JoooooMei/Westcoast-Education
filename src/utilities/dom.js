@@ -80,7 +80,6 @@ export const showAllCoursesBackoffice = async (courses) => {
   for (let course of courses) {
     try {
       const bookings = await getBookingInfo('customerOrders', course.courseId);
-      console.log(bookings);
 
       // Skapa kursens list-element
       const li = document.createElement('li');
@@ -91,9 +90,8 @@ export const showAllCoursesBackoffice = async (courses) => {
         <div>
           <h5>Kursdeltagare</h5>
           <div class="booking-details">
-            <div class="flex" id="info">
-              <div id="user-${course.courseId}"></div>
-              <div id="locality-${course.courseId}"></div>
+            <div id="info-${course.courseId}">
+           
             </div>
            
             
@@ -103,35 +101,32 @@ export const showAllCoursesBackoffice = async (courses) => {
 
       list.appendChild(li);
 
-      // Referens till kursens deltagarcontainer
-      const participantContainer = document.querySelector(
-        `#user-${course.courseId}`
-      );
-
-      const localityContainer = document.querySelector(
-        `#locality-${course.courseId}`
-      );
-
-      const infoWrapper = document.querySelector('#info');
+      const infoWrapper = document.querySelector(`#info-${course.courseId}`);
 
       // Lägg till alla bokningar i DOM
       bookings.forEach((booking) => {
-        const participant = document.createElement('p');
-        const locality = document.createElement('p');
-        participant.innerHTML = `${booking.customer.firstName} ${booking.customer.lastName}`;
-        locality.innerHTML = `  ${
-          booking.classRoom
-            ? `<i class="fa-solid fa-location-dot"></i><span>Klassrum</span>`
-            : ''
-        }
+        const bookingsContainer = document.createElement('div');
+        bookingsContainer.classList.add('bookings-container');
+        bookingsContainer.innerHTML = `
+        <div>
+          ${booking.customer.firstName} ${booking.customer.lastName}
+        </div>
+        <div>
+          ${
+            booking.classRoom
+              ? `<i class="fa-solid fa-location-dot"></i><span>Klassrum</span>`
+              : ''
+          }
 
-        ${
-          booking.distanceCourse
-            ? `<i class="fa-regular fa-globe"></i><span> Distans</span>`
-            : ''
-        }`;
-        participantContainer.appendChild(participant);
-        localityContainer.appendChild(locality);
+          ${
+            booking.distanceCourse
+              ? `<i class="fa-regular fa-globe"></i><span> Distans</span>`
+              : ''
+          }
+        </div>
+        `;
+
+        infoWrapper.appendChild(bookingsContainer);
       });
     } catch (error) {
       console.log('Något gick fel');
