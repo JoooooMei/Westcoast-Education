@@ -119,6 +119,7 @@ header {
   width: 100%;
   align-items: center;
   margin-inline-start: var(--page-margin);
+  font-weight: 600;
 }
 
 .nav-wrapper nav ul li:last-child {
