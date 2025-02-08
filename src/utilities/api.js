@@ -1,4 +1,4 @@
-export const findCourses = async () => {
+export const getCourses = async () => {
   const url = 'http://localhost:3000/utbildningar';
 
   try {
@@ -15,7 +15,7 @@ export const findCourses = async () => {
   }
 };
 
-export const findThisCourse = async (urlString) => {
+export const getThisCourse = async (urlString) => {
   let url = urlString;
 
   const id = location.search.split('=')[1];
@@ -47,4 +47,27 @@ export const getBookingInfo = async (endpoint, courseId) => {
   } else {
     return 'error';
   }
+};
+
+export const postToDB = async (urlString, data) => {
+  const url = urlString;
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      console.log('POST successfull!');
+    } else {
+      console.error('POST error');
+    }
+  } catch (error) {
+    console.error('Network error:', error);
+  }
+
+  return;
 };

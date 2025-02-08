@@ -169,6 +169,72 @@
       "city": "Borlänge",
       "mobilePhone": "070 44 77 441",
       "email": "hanna@mail.se"
+    },
+    {
+      "id": "abc3",
+      "customerId": "194e6c3a3ee-a8c5c13acd93af8c56df49d343a0fd62",
+      "firstName": "Finemang",
+      "lastName": "Vassmann",
+      "streetAdress": "Ostgatan 77",
+      "postalCode": "123 45",
+      "city": "Vistaden",
+      "mobilePhone": "070 555 41 47",
+      "email": "fink@mail.se"
+    },
+    {
+      "id": "282f",
+      "customerId": "194e6c6480e-49627c3929faff6cfe4df72413470bbf",
+      "firstName": "Viman",
+      "lastName": "Hansson",
+      "streetAdress": "Väggatan 56",
+      "postalCode": "421 14",
+      "city": "Vindstaden",
+      "mobilePhone": "070 451 42 33",
+      "email": "viman@mail.se"
+    },
+    {
+      "id": "02ee",
+      "customerId": "194e71a4f3f-76bb8db379d0c81eccca785ee497095a",
+      "firstName": "Hans ",
+      "lastName": "Håkansson",
+      "streetAdress": "Nygatan 22",
+      "postalCode": "471 00",
+      "city": "Hisslaved",
+      "mobilePhone": "070 445 23 55",
+      "email": "hans@mail.se"
+    },
+    {
+      "id": "b24f",
+      "customerId": "194e71fc549-f78eef507513d5925938c417a40de0f6",
+      "firstName": "Jens",
+      "lastName": "Pettersson",
+      "streetAdress": "Vildmarken 7",
+      "postalCode": "794 11",
+      "city": "Åmål",
+      "mobilePhone": "076 10 44 771",
+      "email": "jens@mail.se"
+    },
+    {
+      "id": "81f5",
+      "customerId": "194e7241d67-599070ee70cec3ebc9368ea016c864a2",
+      "firstName": "Jesper ",
+      "lastName": "Vildmark",
+      "streetAdress": "Ormstigen 55",
+      "postalCode": "991 41",
+      "city": "Umeå",
+      "mobilePhone": "073 99 12 41",
+      "email": "jesper@mail.se"
+    },
+    {
+      "id": "bf7c",
+      "customerId": "194e7266b1a-c30ac627b13e22c2fd77db35158422e2",
+      "firstName": "Åsa",
+      "lastName": "Rejkard",
+      "streetAdress": "Stövelvägen 19",
+      "postalCode": "411 44",
+      "city": "Jönköping",
+      "mobilePhone": "074 887 41 12",
+      "email": "asa@mail.se"
     }
   ],
   "customerOrders": [
@@ -272,6 +338,109 @@
       },
       "courseName": "Surdeg från grunden",
       "courseId": "2",
+      "distanceCourse": true
+    },
+    {
+      "id": "4e6f",
+      "orderDate": "2025-02-08",
+      "customer": {
+        "customerId": "194e6c3a3ee-a8c5c13acd93af8c56df49d343a0fd62",
+        "firstName": "Finemang",
+        "lastName": "Vassmann",
+        "streetAdress": "Ostgatan 77",
+        "postalCode": "123 45",
+        "city": "Vistaden",
+        "mobilePhone": "070 555 41 47",
+        "email": "fink@mail.se"
+      },
+      "courseName": "Engelska glosor",
+      "courseId": "7",
+      "classRoom": true
+    },
+    {
+      "id": "abbf",
+      "orderDate": "2025-02-08",
+      "customer": {
+        "customerId": "194e6c6480e-49627c3929faff6cfe4df72413470bbf",
+        "firstName": "Viman",
+        "lastName": "Hansson",
+        "streetAdress": "Väggatan 56",
+        "postalCode": "421 14",
+        "city": "Vindstaden",
+        "mobilePhone": "070 451 42 33",
+        "email": "viman@mail.se"
+      },
+      "courseName": "Engelska glosor",
+      "courseId": "7",
+      "classRoom": true
+    },
+    {
+      "id": "c8de",
+      "orderDate": "2025-02-08",
+      "customer": {
+        "customerId": "194e71a4f3f-76bb8db379d0c81eccca785ee497095a",
+        "firstName": "Hans ",
+        "lastName": "Håkansson",
+        "streetAdress": "Nygatan 22",
+        "postalCode": "471 00",
+        "city": "Hisslaved",
+        "mobilePhone": "070 445 23 55",
+        "email": "hans@mail.se"
+      },
+      "courseName": "Arkeologi Grundkurs",
+      "courseId": "6",
+      "distanceCourse": true,
+      "classRoom": false
+    },
+    {
+      "id": "a3ad",
+      "orderDate": "2025-02-08",
+      "customer": {
+        "customerId": "194e71fc549-f78eef507513d5925938c417a40de0f6",
+        "firstName": "Jens",
+        "lastName": "Pettersson",
+        "streetAdress": "Vildmarken 7",
+        "postalCode": "794 11",
+        "city": "Åmål",
+        "mobilePhone": "076 10 44 771",
+        "email": "jens@mail.se"
+      },
+      "courseName": "Memecoin analytics",
+      "courseId": "3",
+      "classRoom": true
+    },
+    {
+      "id": "54b0",
+      "orderDate": "2025-02-08",
+      "customer": {
+        "customerId": "194e7241d67-599070ee70cec3ebc9368ea016c864a2",
+        "firstName": "Jesper ",
+        "lastName": "Vildmark",
+        "streetAdress": "Ormstigen 55",
+        "postalCode": "991 41",
+        "city": "Umeå",
+        "mobilePhone": "073 99 12 41",
+        "email": "jesper@mail.se"
+      },
+      "courseName": "Fiska som proffsen",
+      "courseId": "4",
+      "distanceCourse": true
+    },
+    {
+      "id": "e111",
+      "orderDate": "2025-02-08",
+      "customer": {
+        "customerId": "194e7266b1a-c30ac627b13e22c2fd77db35158422e2",
+        "firstName": "Åsa",
+        "lastName": "Rejkard",
+        "streetAdress": "Stövelvägen 19",
+        "postalCode": "411 44",
+        "city": "Jönköping",
+        "mobilePhone": "074 887 41 12",
+        "email": "asa@mail.se"
+      },
+      "courseName": "Matematik för nybörjare",
+      "courseId": "5",
       "distanceCourse": true
     }
   ]

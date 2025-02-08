@@ -1,6 +1,6 @@
-import { findThisCourse } from './utilities/api.js';
-
+import { getThisCourse, postToDB } from './utilities/api.js';
 import { generateId } from './utilities/util.js';
+import { showBookingDetails } from './utilities/dom.js';
 
 const bookingForm = document.querySelector('#booking-form');
 
@@ -10,15 +10,14 @@ const initApp = () => {
 
 const ShowCourse = async () => {
   let url = 'http://localhost:3000/utbildningar/';
-  const course = await findThisCourse(url);
+  const course = await getThisCourse(url);
   showBookingDetails(course);
 };
 
 const handleFormInput = async (e) => {
-  let url = 'http://localhost:3000/utbildningar/';
-  const course = await findThisCourse(url);
-
   e.preventDefault();
+  let url = 'http://localhost:3000/utbildningar/';
+  const course = await getThisCourse(url);
 
   if (bookingForm === null) return;
 
@@ -56,73 +55,9 @@ const handleFormInput = async (e) => {
     customerOrder.distanceCourse = true;
   }
 
-  try {
-    const response = await fetch('http://localhost:3000/customerOrders', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(customerOrder),
-    });
+  await postToDB('http://localhost:3000/customerOrders', customerOrder);
 
-    if (response.ok) {
-      console.log('Order added successfully!');
-    } else {
-      console.error('Error adding order');
-    }
-  } catch (error) {
-    console.error('Network error:', error);
-  }
-
-  try {
-    const response = await fetch('http://localhost:3000/customers', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(customer),
-    });
-
-    if (response.ok) {
-      console.log('Customer added successfully!');
-    } else {
-      console.error('Error adding customer');
-    }
-  } catch (error) {
-    console.error('Network error:', error);
-  }
-};
-
-const showBookingDetails = (course) => {
-  console.log(course);
-
-  const div = document.querySelector('#booking-info');
-  const InputCourseFormat = document.querySelector('#input-course-format');
-
-  div.innerHTML = `
-    <div class="thumbnail-wrapper">
-      <img src="${course.imageUrl}"  />
-    </div>
-    <div>
-      <h4>Din bokning</h4>
-      <p><b>${course.courseName}</b></p>
-      <p>Startdatum: ${course.startDate}</p>
-    </div>
-  `;
-
-  InputCourseFormat.innerHTML = `
-    <option value="" disabled selected>Välj kursformat</option>
-    ${course.classRoom ? `<option  value="Klassrum">Klassrum</option>` : ''}
-    ${
-      course.distanceCourse
-        ? `<option value="Distanskurs">Distanskurs</option>`
-        : ''
-    }
-  `;
-};
-
-const updateUI = () => {
-  bookingForm.style.display = 'none';
+  await postToDB('http://localhost:3000/customers', customer);
 };
 
 bookingForm.addEventListener('submit', handleFormInput);

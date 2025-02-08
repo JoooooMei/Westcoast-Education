@@ -1,5 +1,5 @@
 import { showCourses } from './utilities/dom.js';
-import { findCourses } from './utilities/api.js';
+import { getCourses } from './utilities/api.js';
 
 const popularCoursesButton = document.querySelector('#popular-courses');
 const currentCoursesButton = document.querySelector('#current-courses');
@@ -13,19 +13,19 @@ const initApp = () => {
 };
 
 const showAllCourses = async () => {
-  const courses = await findCourses();
+  const courses = await getCourses();
   showCourses(courses);
 };
 
 const showPopularCourses = async () => {
-  const courses = await findCourses();
+  const courses = await getCourses();
 
   popularCourses = courses.filter((course) => course.popular);
   showCourses(popularCourses);
 };
 
 const showCurrentCourses = async () => {
-  const courses = await findCourses();
+  const courses = await getCourses();
 
   const filterDate = new Date();
 

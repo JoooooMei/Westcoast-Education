@@ -139,3 +139,31 @@ export const showCourseDetails = (course) => {
 
   document.querySelector('.center-wrapper').appendChild(div);
 };
+
+export const showBookingDetails = (course) => {
+  console.log(course);
+
+  const div = document.querySelector('#booking-info');
+  const InputCourseFormat = document.querySelector('#input-course-format');
+
+  div.innerHTML = `
+    <div class="thumbnail-wrapper">
+      <img src="${course.imageUrl}"  />
+    </div>
+    <div>
+      <h4>Din bokning</h4>
+      <p><b>${course.courseName}</b></p>
+      <p>Startdatum: ${course.startDate}</p>
+    </div>
+  `;
+
+  InputCourseFormat.innerHTML = `
+    <option value="" disabled selected>Välj kursformat</option>
+    ${course.classRoom ? `<option  value="Klassrum">Klassrum</option>` : ''}
+    ${
+      course.distanceCourse
+        ? `<option value="Distanskurs">Distanskurs</option>`
+        : ''
+    }
+  `;
+};
