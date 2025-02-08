@@ -1,4 +1,4 @@
-import { getBookingInfo } from '../backoffice.js';
+import { getBookingInfo } from './api.js';
 
 export const clearAllCourses = () => {
   const listAllCourses = document.querySelector('#list-all-couses');
@@ -40,40 +40,6 @@ export const showCourses = (courses) => {
   listAllCourses.appendChild(ul);
 };
 
-// export const showAllCoursesBackoffice = async (courses) => {
-//   const list = document.querySelector('#course-list');
-
-//   for (let course of courses) {
-//     try {
-//       const bookings = await getBookingInfo('customerOrders', course.courseId);
-
-//       let i = 0;
-//       for (let booking of bookings) {
-//         console.log(bookings[i].customer.firstName);
-//         i += 1;
-//       }
-//     } catch (error) {
-//       console.log('Inen bokning');
-//     }
-
-//     const li = document.createElement('li');
-//     li.innerHTML = `
-//       <div class="course-name-heading">
-//        ${course.courseName}
-//       </div>
-//       <div>
-//         Kursdeltagare
-//         <div class="flex">
-//           <div>Jag vill ha bookings[i]-customer.firstName här</div>
-//           <div></div>
-//           <div></div>
-//         </div>
-//       </div>
-//     `;
-//     list.appendChild(li);
-//   }
-// };
-
 export const showAllCoursesBackoffice = async (courses) => {
   const list = document.querySelector('#course-list');
 
@@ -81,7 +47,6 @@ export const showAllCoursesBackoffice = async (courses) => {
     try {
       const bookings = await getBookingInfo('customerOrders', course.courseId);
 
-      // Skapa kursens list-element
       const li = document.createElement('li');
       li.innerHTML = `
         <div class="course-name-heading">
@@ -103,7 +68,7 @@ export const showAllCoursesBackoffice = async (courses) => {
 
       const infoWrapper = document.querySelector(`#info-${course.courseId}`);
 
-      // Lägg till alla bokningar i DOM
+      // Lägg till alla bokningar i under rätt kurs
       bookings.forEach((booking) => {
         const bookingsContainer = document.createElement('div');
         bookingsContainer.classList.add('bookings-container');

@@ -14,20 +14,6 @@ const getCourses = async () => {
   showAllCoursesBackoffice(courses);
 };
 
-export const getBookingInfo = async (endpoint, courseId) => {
-  const url = `http://localhost:3000/${endpoint}?courseId=${courseId}`;
-  console.log(url);
-
-  const response = await fetch(url);
-  if (response.ok) {
-    const bookings = await response.json();
-
-    return bookings;
-  } else {
-    return 'error';
-  }
-};
-
 const handleFormInput = async (e) => {
   e.preventDefault();
   console.log('click submit');

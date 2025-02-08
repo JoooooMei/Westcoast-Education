@@ -90,17 +90,6 @@
       "price": 9950,
       "popular": true,
       "description": "Vill du förbättra ditt engelska ordförråd? Den här kursen hjälper dig att lära dig nya glosor genom interaktiva lektioner och praktiska övningar. Vi fokuserar på ord och uttryck som är användbara i både vardagliga och professionella sammanhang. Kursen innehåller också tips för att förbättra uttal och kommunikationsförmåga."
-    },
-    {
-      "id": "3961",
-      "courseId": "194e23a3d97-5fe0032f2787b34ba45cffdf8fb41f4d",
-      "courseName": "Bärplockning",
-      "description": "Lär dig plocka bär",
-      "price": "900",
-      "classRoom": false,
-      "distanceCourse": true,
-      "startDate": "2025-07-24",
-      "duration": "30"
     }
   ],
   "customers": [
@@ -264,8 +253,8 @@
         "mobilePhone": "070 11 11 111",
         "email": "nisse@mail.se"
       },
-      "courseName": "Bärplockning",
-      "courseId": "194e23a3d97-5fe0032f2787b34ba45cffdf8fb41f4d",
+      "courseName": "Surdeg från grunden",
+      "courseId": "2",
       "distanceCourse": true
     },
     {
