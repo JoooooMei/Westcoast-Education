@@ -6,16 +6,17 @@ const submitButton = document.querySelector('#submit');
 const submitForm = document.querySelector('#submit-course');
 
 const initApp = () => {
-  showAllCourses();
+  getCourses();
 };
 
-const showAllCourses = async () => {
+const getCourses = async () => {
   const courses = await findCourses();
   showAllCoursesBackoffice(courses);
 };
 
 export const getBookingInfo = async (endpoint, courseId) => {
   const url = `http://localhost:3000/${endpoint}?courseId=${courseId}`;
+  console.log(url);
 
   const response = await fetch(url);
   if (response.ok) {

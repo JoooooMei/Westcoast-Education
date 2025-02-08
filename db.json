@@ -169,6 +169,17 @@
       "city": "Nilsby",
       "mobilePhone": "070 11 11 111",
       "email": "nisse@mail.se"
+    },
+    {
+      "id": "8292",
+      "customerId": "194e2508674-c9d7eec52c07331ae6bab01a46f021b7",
+      "firstName": "Hanna",
+      "lastName": "Bengtsson",
+      "streetAdress": "Solgatan 24",
+      "postalCode": "424 44",
+      "city": "Borlänge",
+      "mobilePhone": "070 44 77 441",
+      "email": "hanna@mail.se"
     }
   ],
   "customerOrders": [
@@ -255,6 +266,23 @@
       },
       "courseName": "Bärplockning",
       "courseId": "194e23a3d97-5fe0032f2787b34ba45cffdf8fb41f4d",
+      "distanceCourse": true
+    },
+    {
+      "id": "2366",
+      "orderDate": "2025-02-07",
+      "customer": {
+        "customerId": "194e2508674-c9d7eec52c07331ae6bab01a46f021b7",
+        "firstName": "Hanna",
+        "lastName": "Bengtsson",
+        "streetAdress": "Solgatan 24",
+        "postalCode": "424 44",
+        "city": "Borlänge",
+        "mobilePhone": "070 44 77 441",
+        "email": "hanna@mail.se"
+      },
+      "courseName": "Surdeg från grunden",
+      "courseId": "2",
       "distanceCourse": true
     }
   ]
