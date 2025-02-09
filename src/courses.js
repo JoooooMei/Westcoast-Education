@@ -1,5 +1,5 @@
 import { showCourses } from './utilities/dom.js';
-import { getCourses } from './utilities/api.js';
+import { getCourses, getBookingInfo } from './utilities/api.js';
 
 const popularCoursesButton = document.querySelector('#popular-courses');
 const currentCoursesButton = document.querySelector('#current-courses');
@@ -18,10 +18,32 @@ const showAllCourses = async () => {
 };
 
 const showPopularCourses = async () => {
+  // Visar kurser med > 3 bokningar
   const courses = await getCourses();
 
-  popularCourses = courses.filter((course) => course.popular);
-  showCourses(popularCourses);
+  const results = [];
+  for (let course of courses) {
+    const bookings = await getBookingInfo('customerOrders', course.courseId);
+
+    if (bookings.length > 3) {
+      results.push(bookings);
+    }
+  }
+
+  const flattenedResults = results.flat();
+
+  const courseIds = [];
+  flattenedResults.forEach((booking) => {
+    courseIds.push(booking.courseId);
+  });
+
+  const uniqueCourseIds = [...new Set(courseIds)];
+
+  const filteredCourses = courses.filter((course) =>
+    uniqueCourseIds.includes(course.courseId)
+  );
+
+  showCourses(filteredCourses);
 };
 
 const showCurrentCourses = async () => {

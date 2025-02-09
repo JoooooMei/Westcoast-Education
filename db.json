@@ -235,6 +235,28 @@
       "city": "Jönköping",
       "mobilePhone": "074 887 41 12",
       "email": "asa@mail.se"
+    },
+    {
+      "id": "3716",
+      "customerId": "194eb46320a-df98493ee33057ec54ac3e47018da72c",
+      "firstName": "Johannes",
+      "lastName": "Åberg",
+      "streetAdress": "Vinkelgatan 10c",
+      "postalCode": "621 74",
+      "city": "Hoberget",
+      "mobilePhone": "070 441 77 87",
+      "email": "jojo@mail.se"
+    },
+    {
+      "id": "c215",
+      "customerId": "194eb46e051-bc60fcd5d76fe328e2853a967196531e",
+      "firstName": "Lisa",
+      "lastName": "Liljeberg",
+      "streetAdress": "Stengatan 4",
+      "postalCode": "424 44",
+      "city": "Falköping",
+      "mobilePhone": "074 112 22 55",
+      "email": "lisa@mail.se"
     }
   ],
   "customerOrders": [
@@ -442,6 +464,40 @@
       "courseName": "Matematik för nybörjare",
       "courseId": "5",
       "distanceCourse": true
+    },
+    {
+      "id": "a1e3",
+      "orderDate": "2025-02-09",
+      "customer": {
+        "customerId": "194eb46320a-df98493ee33057ec54ac3e47018da72c",
+        "firstName": "Johannes",
+        "lastName": "Åberg",
+        "streetAdress": "Vinkelgatan 10c",
+        "postalCode": "621 74",
+        "city": "Hoberget",
+        "mobilePhone": "070 441 77 87",
+        "email": "jojo@mail.se"
+      },
+      "courseName": "Engelska glosor",
+      "courseId": "7",
+      "classRoom": true
+    },
+    {
+      "id": "e204",
+      "orderDate": "2025-02-09",
+      "customer": {
+        "customerId": "194eb46e051-bc60fcd5d76fe328e2853a967196531e",
+        "firstName": "Lisa",
+        "lastName": "Liljeberg",
+        "streetAdress": "Stengatan 4",
+        "postalCode": "424 44",
+        "city": "Falköping",
+        "mobilePhone": "074 112 22 55",
+        "email": "lisa@mail.se"
+      },
+      "courseName": "Engelska glosor",
+      "courseId": "7",
+      "classRoom": true
     }
   ]
 }
