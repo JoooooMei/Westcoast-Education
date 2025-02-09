@@ -257,6 +257,17 @@
       "city": "Falköping",
       "mobilePhone": "074 112 22 55",
       "email": "lisa@mail.se"
+    },
+    {
+      "id": "2e22",
+      "customerId": "194eb9f8c9a-ca1b810d42c9b88b94cebf802a3732f9",
+      "firstName": "Bengt",
+      "lastName": "Vidmark",
+      "streetAdress": "Gatan 10",
+      "postalCode": "422 11",
+      "city": "Vidköping",
+      "mobilePhone": "074 11 22 444",
+      "email": "bengt@mail.se"
     }
   ],
   "customerOrders": [

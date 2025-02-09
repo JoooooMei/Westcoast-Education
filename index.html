@@ -56,21 +56,22 @@
         </ul>
       </div>
 
-      <div class="search-container">
-        <form action="">
-          <input type="text" placeholder="Sök kurs ..." id="" />
+      <!-- Sökfältet är dolt med variabeln style eftersom det saknar funktionalitet. Ta bort style från html för att återställa sökfältet-->
+      <div
+        class="search-container"
+        style="visibility: hidden; height: 0px; margin-top: 0px">
+        <form id="search-course">
+          <input name="input" type="text" placeholder="Sök kurs ..." id="" />
+          <button id="search-course-button">Sök</button>
         </form>
-        <button>Sök</button>
       </div>
+
       <div class="sort-container">
         <button id="all-courses">
           <i class="fa-sharp-duotone fa-solid fa-sort"></i>Allt
         </button>
         <button id="popular-courses">
           <i class="fa-sharp-duotone fa-solid fa-sort"></i>Populärt
-        </button>
-        <button id="current-courses">
-          <i class="fa-sharp-duotone fa-solid fa-sort"></i>Aktuellt
         </button>
       </div>
 

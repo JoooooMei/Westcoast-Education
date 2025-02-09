@@ -236,6 +236,10 @@ ul {
   height: 100%;
 }
 
+#search-course {
+  display: flex;
+}
+
 button {
   background: var(--secondary-color);
   color: white;

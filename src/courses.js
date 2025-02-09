@@ -2,11 +2,8 @@ import { showCourses } from './utilities/dom.js';
 import { getCourses, getBookingInfo } from './utilities/api.js';
 
 const popularCoursesButton = document.querySelector('#popular-courses');
-const currentCoursesButton = document.querySelector('#current-courses');
-const allCoursesButton = document.querySelector('#all-courses');
 
-let popularCourses = [];
-let currentCourses = [];
+const allCoursesButton = document.querySelector('#all-courses');
 
 const initApp = () => {
   showAllCourses();
@@ -46,18 +43,7 @@ const showPopularCourses = async () => {
   showCourses(filteredCourses);
 };
 
-const showCurrentCourses = async () => {
-  const courses = await getCourses();
-
-  const filterDate = new Date();
-
-  currentCourses = courses.filter((course) => {
-    return new Date(course.startDate) > filterDate;
-  });
-  showCourses(currentCourses);
-};
-
 allCoursesButton.addEventListener('click', showAllCourses);
-currentCoursesButton.addEventListener('click', showCurrentCourses);
+
 popularCoursesButton.addEventListener('click', showPopularCourses);
 addEventListener('DOMContentLoaded', initApp);
